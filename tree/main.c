@@ -63,19 +63,18 @@ int theBiggest(struct tree *root){
 }
 int main(int argc, char *argv[]) {
 	struct tree *root=NULL;
-	root=createNode(5);
-	root->left=createNode(3);
-	root->left->left=createNode(1);
-	root->left->right=createNode(4);
-	root->right=createNode(8);
-	root->right->right=createNode(10);
-	root->right->left=createNode(7);
+	root=createNode(1);
+	root->left=createNode(2);
+	root->right=createNode(3);
+	root->right->right=createNode(4);
+	root->left->right->left=createNode(5);
+	root->left->right->right=createNode(6);
 	insert(root,6);
 	inOrder(root);
 	printf("\n");
-	preOrder(root);
+//	preOrder(root);
 	printf("\n");
-	postOrder(root);
+//	postOrder(root);
 	printf("\n");
 	printf("En buyuk Yaprak %d",theBiggestBinary(root));
 	return 0;

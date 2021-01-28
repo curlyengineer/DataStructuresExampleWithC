@@ -96,7 +96,7 @@ printf("%s\n",exp);
 }
 
 int main(int argc, char *argv[]) {
-	char exp[]="a+b*(c^d-e)^(f+g*h)-i";
+	char exp[]="H+F*(R^E*G)/(A-B)";
 	infixToPostfix(exp);
 	return 0;
 }
